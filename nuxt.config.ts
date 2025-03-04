@@ -5,5 +5,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   alias : {
     "@" : resolve(__dirname, "/")
-  }
+  },
+    app: {
+      baseURL: '/DESTINY_POO/', // Substitua pelo nome do seu repositório no GitHub
+    },
+    build: {
+      transpile: [],
+    },
+    generate: {
+      fallback: '404.html',
+    }  
 })
